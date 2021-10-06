@@ -145,6 +145,11 @@ public class TutorialManager : MonoBehaviour
 
             case 8:
 
+                if (XRRig.transform.position != new Vector3(0, 0, 15.8f))
+                {
+                    XRRig.transform.position = new Vector3(0, 0, 15.8f); //teleport player back to table
+                }
+
                 if (AButtonReference.action.triggered) //return to main menu
                 {
                     SceneManager.LoadScene(0); 
